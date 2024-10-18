@@ -10,4 +10,4 @@ Additionally, this API is easy to use, requires no authentication, and offers va
 
 With this API, I was able to fetch the latest launch information, including details such as the launch name, flight number, launch date, success status, and a mission patch image. Presenting this data on a web page is a way to visually highlight SpaceX's most recent contributions to space exploration, making it accessible and engaging for users.
 
-You can explore the SpaceX API yourself [here](https://api.spacexdata.com) and learn more about their exciting space missions!
+You can view my page showcasing the SpaceX API [here](https://api.spacexdata.com](https://brendandindialsece.github.io/lab8/)) 
