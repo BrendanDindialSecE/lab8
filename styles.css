@@ -1,0 +1,220 @@
+/* Body Styling */
+body {
+    font-family: "Space Mono", monospace;
+    background-color: #000000; /* Dark themed background */
+    color: #e0e0e0; 
+    margin: 0;
+    padding: 0;   
+}
+
+/* Header Styling */
+header {
+    background-color: #02020c; /* Darker header */
+    color: #ffffff;
+    padding: 4rem;
+    text-align: center;
+    border-bottom: 1px solid #85edff; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 2rem; 
+}
+
+/* Navigation Styling */
+nav {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure it stays on top when scrolling */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between each link */
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none; 
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #85edff; 
+    text-decoration: underline;
+}
+
+/* Header Text Styling */
+header h1 {
+    color: #85ffb8;
+    margin: 0;
+}
+
+#space-logo {
+    max-width: 100px; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; 
+}
+
+h2 {
+    color: #85ffb8;
+    margin: 0;
+}
+
+/* Main Content Styling */
+main p {
+    color: #85edff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* API Info Section Styling */
+#api-info {
+    background-color: #02020c;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+    max-width: 600px; /* Keeping it consistent with the launch data section */
+    margin: 1rem auto; /* Center align with auto margins */
+    text-align: center; /* Center text for better presentation */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Launch Data Section Styling */
+#launch-data {
+    background-color: #02020c; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+    max-width: 600px;
+    text-align: center;
+    margin: 1rem auto; 
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#launch-data img {
+    max-width: 150px; /* Increased image size */
+    margin-top: 1rem;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+#api-info:hover,
+#launch-data:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8); 
+}
+
+/* Footer Styling */
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #85ffb8; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    #launch-data {
+        max-width: 100%;
+    }
+}
+
+/* Large Devices */
+@media (min-width: 1024px) {
+    header,
+    footer {
+        padding: 2.5em;
+    }
+  
+    nav ul li {
+        margin: 0 1.25em;
+    }
+  
+    button {
+        padding: 0.94em 1.88em;
+    }
+}
+
+/* Medium Devices */
+@media (max-width: 1023px) and (min-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+  
+    nav ul li {
+        display: block;
+        margin: 0.63em 0;
+    }
+  
+    section {
+        padding: 1.88em;
+    }
+}
+
+/* Small Devices */
+@media (max-width: 767px) {
+    nav ul {
+        display: block;
+        text-align: left;
+    }
+  
+    nav ul li {
+        display: block;
+        margin: 0.63em 0;
+    }
+  
+    h1 {
+        font-size: 1.5em;
+    }
+  
+    section {
+        padding: 1.25em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+  
+    header h1 {
+        font-size: 1.2em;
+    }
+}
+
+/* Animations For ALL Sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+section {
+    animation: fadeIn 1.2s ease forwards;
+}
